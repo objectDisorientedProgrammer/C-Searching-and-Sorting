@@ -4,3 +4,4 @@ Searching and sorting libraries implemented in C.
 # Contents
 ## Sorting
 * Insertion sort (for integers)
+* Merge sort (for integers)
