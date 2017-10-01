@@ -22,17 +22,16 @@
     SOFTWARE.
 */
 
-#ifndef CSS_INSERTION_SORT_H
-#define CSS_INSERTION_SORT_H
+#ifndef CSS_MERGE_SORT_H
+#define CSS_MERGE_SORT_H
 
 /**
- * @brief Perform insertion sort on an array.
+ * @brief Perform merge-sort on an array.
  * @param     array - data to be sorted.
  * @param[in] length - number of elements.
  *
  * @note Sorted data will be in array.
  */
-void insertionSort(int* array, int length);
+void mergeSort(int* array, int length);
 
 #endif
-
