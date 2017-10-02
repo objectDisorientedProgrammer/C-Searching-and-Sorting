@@ -5,3 +5,4 @@ Searching and sorting libraries implemented in C.
 ## Sorting
 * Insertion sort (for integers)
 * Merge sort (for integers)
+* Quick sort (for integers)
