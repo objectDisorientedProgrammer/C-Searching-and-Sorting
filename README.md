@@ -6,3 +6,4 @@ Searching and sorting libraries implemented in C.
 * Insertion sort (for integers)
 * Merge sort (for integers)
 * Quick sort (for integers)
+* Selection Sort
