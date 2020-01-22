@@ -32,84 +32,84 @@
 
 void selectionSortInt(int* values, const int arraySize)
 {
-	int i = 0;
-	int j = 0;
-	int minIndex = 0;
-	int temp = 0;
+    int i = 0;
+    int j = 0;
+    int minIndex = 0;
+    int temp = 0;
 
-	for(i = 0; i < arraySize - 1; ++i)
-	{
-		minIndex = i + 1;
-		// select min
-		for(j = i; j < arraySize; j++)
-			if(values[j] < values[minIndex])
-				minIndex = j;
-		// swap values
-		temp = values[i];
-		values[i] = values[minIndex];
-		values[minIndex] = temp;
-	}
+    for(i = 0; i < arraySize - 1; ++i)
+    {
+        minIndex = i + 1;
+        // select min
+        for(j = i; j < arraySize; j++)
+            if(values[j] < values[minIndex])
+                minIndex = j;
+        // swap values
+        temp = values[i];
+        values[i] = values[minIndex];
+        values[minIndex] = temp;
+    }
 }
 
 void selectionSortReverseInt(int* values, const int arraySize)
 {
-	int i = 0;
-	int j = 0;
-	int minIndex = 0;
-	int temp = 0;
+    int i = 0;
+    int j = 0;
+    int minIndex = 0;
+    int temp = 0;
 
-	for(i = 0; i < arraySize - 1; ++i)
-	{
-		minIndex = i + 1;
-		// select min
-		for(j = i; j < arraySize; j++)
-			if(values[j] > values[minIndex])
-				minIndex = j;
-		// swap values
-		temp = values[i];
-		values[i] = values[minIndex];
-		values[minIndex] = temp;
-	}
+    for(i = 0; i < arraySize - 1; ++i)
+    {
+        minIndex = i + 1;
+        // select min
+        for(j = i; j < arraySize; j++)
+            if(values[j] > values[minIndex])
+                minIndex = j;
+        // swap values
+        temp = values[i];
+        values[i] = values[minIndex];
+        values[minIndex] = temp;
+    }
 }
 
 void selectionSortFloat(float* values, const int arraySize)
 {
-	int i = 0;
-	int j = 0;
-	int minIndex = 0;
-	float temp = 0;
+    int i = 0;
+    int j = 0;
+    int minIndex = 0;
+    float temp = 0;
 
-	for(i = 0; i < arraySize - 1; ++i)
-	{
-		minIndex = i + 1;
-		// select min
-		for(j = i; j < arraySize; j++)
-			if(values[j] < values[minIndex])
-				minIndex = j;
-		// swap values
-		temp = values[i];
-		values[i] = values[minIndex];
-		values[minIndex] = temp;
-	}
+    for(i = 0; i < arraySize - 1; ++i)
+    {
+        minIndex = i + 1;
+        // select min
+        for(j = i; j < arraySize; j++)
+            if(values[j] < values[minIndex])
+                minIndex = j;
+        // swap values
+        temp = values[i];
+        values[i] = values[minIndex];
+        values[minIndex] = temp;
+    }
 }
 
 void selectionSortDouble(double* values, const int arraySize)
 {
-	int i = 0;
-	int j = 0;
-	int minIndex = 0;
-	double temp = 0;
+    int i = 0;
+    int j = 0;
+    int minIndex = 0;
+    double temp = 0;
 
-	for(i = 0; i < arraySize - 1; ++i)
-	{
-		minIndex = i + 1;
-		// select min
-		for(j = i; j < arraySize; j++)
-			if(values[j] < values[minIndex])
-				minIndex = j;
-		// swap values
-		temp = values[i];
-		values[i] = values[minIndex];
-		values[minIndex] = temp;
-	}
+    for(i = 0; i < arraySize - 1; ++i)
+    {
+        minIndex = i + 1;
+        // select min
+        for(j = i; j < arraySize; j++)
+            if(values[j] < values[minIndex])
+                minIndex = j;
+        // swap values
+        temp = values[i];
+        values[i] = values[minIndex];
+        values[minIndex] = temp;
+    }
 }
