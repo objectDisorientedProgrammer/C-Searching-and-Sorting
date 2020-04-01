@@ -27,7 +27,6 @@
 */
 
 #include "binary_search.h"
-#include <stdbool.h>
 #include <stdio.h>
 
 
