@@ -5,10 +5,10 @@ SRC=main.c binary_search.c
 
 .PHONY: all
 
-run: all
-	./${PROG}
-
 all: ${PROG}
+
+test: all
+	./${PROG}
 
 ${PROG}: ${SRC}
 	${CC} ${CFLAGS} ${SRC} -o ${PROG}
