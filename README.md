@@ -7,3 +7,6 @@ Searching and sorting libraries implemented in C.
 * Merge sort (for integers)
 * Quick sort (for integers)
 * Selection Sort
+
+## Searching
+* Binary search (integer, iterative)
