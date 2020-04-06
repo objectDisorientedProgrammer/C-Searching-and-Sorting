@@ -1,15 +1,38 @@
-searchDir=searches
-
+SEARCH=searches
+SORT=sorts
+SEARCH_DIRS=binary-search
+SORT_DIRS=insertion-sort mergesort quicksort selection-sort
 
 
 all:
-	$(MAKE) -C "$(searchDir)/binary-search"
+	# build all searching
+	set -e; for d in $(SEARCH); do \
+		for s in $(SEARCH_DIRS); do $(MAKE) all -C "$$d/$$s"; done \
+		done
+	# build all sorting
+	set -e; for d in $(SORT); do \
+		for s in $(SORT_DIRS); do $(MAKE) all -C "$$d/$$s"; done \
+		done
 
 test:
-	$(MAKE) test -C "$(searchDir)/binary-search"
+	# test all searching
+	set -e; for d in $(SEARCH); do \
+		for s in $(SEARCH_DIRS); do $(MAKE) test -C "$$d/$$s"; done \
+		done
+	# test all sorting
+	set -e; for d in $(SORT); do \
+		for s in $(SORT_DIRS); do $(MAKE) test -C "$$d/$$s"; done \
+		done
 
 clean: 
-	$(MAKE) clean -C "$(searchDir)/binary-search"
-
+	# clean all searching
+	set -e; for d in $(SEARCH); do \
+		for s in $(SEARCH_DIRS); do $(MAKE) clean -C "$$d/$$s"; done \
+		done
+	# clean all sorting
+	set -e; for d in $(SORT); do \
+		for s in $(SORT_DIRS); do $(MAKE) clean -C "$$d/$$s"; done \
+		done
 
 .PHONY: all
+
