@@ -22,7 +22,7 @@
     SOFTWARE.
 */
 
-#include "quick-sort.h"
+#include "quicksort.h"
 
 static int findMedian(int first, int middle, int last);
 
