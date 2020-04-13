@@ -22,7 +22,7 @@
     SOFTWARE.
 */
 
-#include "merge-sort.h"
+#include "mergesort.h"
 
 /**
  * @brief Helper function for mergeSort. Does the work of merging and ordering.
